@@ -25,3 +25,49 @@ code {
     'Courier New',
     monospace;
 }
+
+.calculator-sec {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator {
+  height: 100%;
+  max-width: 380px;
+  background: #fff6e5;
+  border-right: 2px solid rgb(85, 85, 85);
+  border-top: 2px solid rgb(85, 85, 85);
+  border-bottom: 4px solid rgb(85, 85, 85);
+  border-left: 4px solid rgb(85, 85, 85);
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+.calc-num {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.calc-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.calc-btn {
+  font-size: 1.5rem;
+  height: 64px;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #fff6e5;
+  color: #000;
+  border-radius: 8px;
+}

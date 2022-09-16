@@ -2,8 +2,12 @@ import React from 'react';
 
 const Numa = () => <input type="number" id="calc-curr-num" defaultValue="0" name="calc-curr-num" />;
 
-// eslint-disable-next-line react/prefer-stateless-function
 class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.props = props;
+  }
+
   render() {
     return (
       <section id="calculator-sec">

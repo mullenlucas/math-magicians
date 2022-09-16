@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -26,9 +25,9 @@ code {
     monospace;
 }
 
-.calculator-sec {
+#calculator-sec {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
 .calculator {
@@ -70,4 +69,9 @@ code {
   background-color: #fff6e5;
   color: #000;
   border-radius: 8px;
+}
+
+#calc-curr-num {
+  width: 100%;
+  text-align: end;
 }

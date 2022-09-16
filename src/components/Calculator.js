@@ -1,8 +1,5 @@
-/* eslint-disable */
 import React from 'react';
 import calculate from '../logic/calculate';
-
-const Numa = (props) => <input type="number" id="calc-curr-num" placeholder="0" value={props.qua} name="calc-curr-num" />;
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -33,7 +30,7 @@ class Calculator extends React.Component {
 
         <div className="calculator">
           <div className="calc-num">
-          { next || operation || total || err || 0}
+            { next || operation || total || err || 0 }
           </div>
 
           <div className="calc-buttons">

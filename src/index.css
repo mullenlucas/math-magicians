@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@500&display=swap');
+
+:root {
+  --font-fami: 'Reem Kufi Fun', sans-serif;
+}
+
 body {
   font-family:
     -apple-system,
@@ -13,6 +19,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #1b8586;
 }
 
 code {
@@ -33,13 +40,13 @@ code {
 .calculator {
   height: 100%;
   max-width: 380px;
-  background: #fff6e5;
-  border-right: 2px solid rgb(85, 85, 85);
-  border-top: 2px solid rgb(85, 85, 85);
-  border-bottom: 4px solid rgb(85, 85, 85);
-  border-left: 4px solid rgb(85, 85, 85);
   padding: 1.5rem;
-  border-radius: 20px;
+  border-radius: 12px;
+  background: rgb(14, 77, 78);
+  background: linear-gradient(0deg, rgba(14, 77, 78, 1) 0%, rgba(6, 31, 32, 1) 84%);
+  color: #fff6e5;
+  font-size: 1.4rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
 }
 
 .calc-num {
@@ -47,6 +54,11 @@ code {
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 0.6rem;
+  border-radius: 6px;
+  border: 2px solid #20a2a4;
+  padding: 0.5rem;
+  font-family: var(--font-fami);
+  font-weight: 600;
 }
 
 .calc-buttons {
@@ -62,13 +74,13 @@ code {
 }
 
 .calc-btn {
-  font-size: 1.5rem;
-  height: 64px;
+  font-size: 1.4rem;
+  padding: 12px;
   font-weight: 600;
-  font-family: inherit;
-  background-color: #fff6e5;
-  color: #000;
-  border-radius: 8px;
+  font-family: var(--font-fami);
+  background-color: rgba(6, 31, 32, 1);
+  color: #fff6e5;
+  border-radius: 6px;
 }
 
 #calc-curr-num {

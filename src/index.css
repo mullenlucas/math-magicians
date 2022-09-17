@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@500&display=swap');
 
 :root {
-  --font-fami: font-family: 'Reem Kufi Fun', sans-serif;
+  --font-fami: 'Reem Kufi Fun', sans-serif;
 }
 
 body {
@@ -23,7 +22,7 @@ body {
   background-color: #1b8586;
 }
 
-/* code {
+code {
   font-family:
     source-code-pro,
     Menlo,
@@ -31,7 +30,7 @@ body {
     Consolas,
     'Courier New',
     monospace;
-} */
+}
 
 #calculator-sec {
   display: flex;
@@ -41,18 +40,13 @@ body {
 .calculator {
   height: 100%;
   max-width: 380px;
-  background: #fff6e5;
-  /* border-right: 2px solid rgba(3,14,14,1);
-  border-top: 2px solid rgba(3,14,14,1);
-  border-bottom: 4px solid rgba(3,14,14,1);
-  border-left: 4px solid rgba(3,14,14,1); */
   padding: 1.5rem;
   border-radius: 12px;
-  background: rgb(14,77,78);
-  background: linear-gradient(0deg, rgba(14,77,78,1) 0%, rgba(6,31,32,1) 84%);
-  color:#fff6e5;
+  background: rgb(14, 77, 78);
+  background: linear-gradient(0deg, rgba(14, 77, 78, 1) 0%, rgba(6, 31, 32, 1) 84%);
+  color: #fff6e5;
   font-size: 1.4rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
 }
 
 .calc-num {
@@ -83,11 +77,10 @@ body {
   font-size: 1.4rem;
   padding: 12px;
   font-weight: 600;
-  font-family: inherit;
-  background-color: rgba(6,31,32,1);
+  font-family: var(--font-fami);
+  background-color: rgba(6, 31, 32, 1);
   color: #fff6e5;
   border-radius: 6px;
-  font-family: var(--font-fami);
 }
 
 #calc-curr-num {

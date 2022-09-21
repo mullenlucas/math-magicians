@@ -6,9 +6,11 @@ function Header() {
     <header>
       <h1>Math Magicians</h1>
       <div id="h-links">
-        <NavLink to="/" className="link">Home</NavLink>
-        <NavLink to="/calculator" className="link">Calculator</NavLink>
-        <NavLink to="/quote" className="link">Quote</NavLink>
+        <NavLink to="/" className="links">Home</NavLink>
+        |
+        <NavLink to="/calculator" className="links">Calculator</NavLink>
+        |
+        <NavLink to="/quote" className="links">Quote</NavLink>
       </div>
     </header>
 

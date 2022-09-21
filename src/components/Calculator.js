@@ -15,6 +15,9 @@ function Calculator() {
 
   return (
     <section id="calculator-sec">
+      <div id="calc-title">
+        <h2>Let&apos;s do some math!</h2>
+      </div>
 
       <div className="calculator">
         <div className="calc-num">

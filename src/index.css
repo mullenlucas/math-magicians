@@ -19,7 +19,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1b8586;
+  background-color: rgb(1, 183, 186);
 }
 
 code {

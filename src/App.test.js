@@ -1,31 +1,33 @@
-import React from "react";
-import { render } from "@testing-library/react";
-import App from "./App";
-import Header from './components/Header'
-import Footer from "./components/Footer";
-import { BrowserRouter } from "react-router-dom";
-describe("Testing App components", () => {
-  test("Rendering the Header component", () => {
+import React from 'react';
+import { render } from '@testing-library/react';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+describe('Testing App components', () => {
+  test('Rendering the Header component', () => {
     const component = render(
       <BrowserRouter>
         <Header />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
     expect(component).toMatchSnapshot();
   });
-  test("Rendering the App component", () => {
+  test('Rendering the App component', () => {
     const component = render(
       <BrowserRouter>
         <App />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
     expect(component).toMatchSnapshot();
   });
-  test("Rendering the Footer component", () => {
+  test('Rendering the Footer component', () => {
     const component = render(
-    <BrowserRouter>
-      <Footer />
-    </BrowserRouter>);
+      <BrowserRouter>
+        <Footer />
+      </BrowserRouter>,
+    );
     expect(component).toMatchSnapshot();
   });
 });

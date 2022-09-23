@@ -20,7 +20,7 @@ function Calculator() {
       </div>
 
       <div className="calculator">
-        <div className="calc-num">
+        <div id="calc-num-id" className="calc-num">
           { state.next || state.operation || state.total || state.err || 0 }
         </div>
 
